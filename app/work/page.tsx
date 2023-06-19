@@ -1,8 +1,6 @@
-import React from "react";
+"use client";
 
-type Props = {};
-
-const Work = (props: Props) => {
+const Work = () => {
   return <div>Work</div>;
 };
 

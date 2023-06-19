@@ -2,7 +2,7 @@
 import { TypeAnimation } from "react-type-animation";
 import { Teko } from "next/font/google";
 
-export const teko = Teko({
+const teko = Teko({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });

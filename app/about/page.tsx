@@ -1,8 +1,5 @@
-import React from "react";
-
-type Props = {};
-
-const About = (props: Props) => {
+"use client";
+const About = () => {
   return <div>About</div>;
 };
 

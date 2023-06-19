@@ -1,8 +1,6 @@
-import React from "react";
+"use client";
 
-type Props = {};
-
-const Pricing = (props: Props) => {
+const Pricing = () => {
   return <div>Pricing</div>;
 };
 

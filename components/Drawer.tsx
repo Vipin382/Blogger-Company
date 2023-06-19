@@ -12,7 +12,12 @@ import { Toggle } from "./ui/toggle";
 import { HambergerMenu } from "iconsax-react";
 import { Icons } from "./Icons";
 import { UserAvatar } from "./UserAvatar";
-import { teko } from "@/app/page";
+import { Teko } from "next/font/google";
+
+const teko = Teko({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 const Drawer: React.FC<SiteConfig> = ({ name, NavLinks }) => {
   return (
