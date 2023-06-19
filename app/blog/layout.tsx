@@ -1,4 +1,3 @@
-"use client";
 import { Inter } from "next/font/google";
 import { SearchFilter } from "@/components/SearchFilter";
 import { BadgesData } from "@/config/site";
