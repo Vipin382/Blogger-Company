@@ -55,7 +55,7 @@ const BlogCard = (props: Props) => {
         </div>
         <div className="gap-y-2">
           <h1 className="font-bold text-zinc-200 text-md sm:text-xl">
-            {props.title}
+            {props.title?.substring(0, 40) + "..."}
           </h1>
           <p className="text-zinc-500 text-xs sm:text-base text-justify">
             {props.content?.substring(0, 80) + "..."}
