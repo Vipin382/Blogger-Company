@@ -12,7 +12,7 @@ import { Poppins } from "next/font/google";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { Icons } from "./Icons";
-import { format, formatDistance, formatRelative, subDays } from "date-fns";
+import { formatDistance, formatRelative, subDays } from "date-fns";
 
 type Props = Partial<{
   image: string | null;

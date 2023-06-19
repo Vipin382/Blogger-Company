@@ -1,18 +1,12 @@
 "use client";
 import { TypeAnimation } from "react-type-animation";
-import { Teko } from "next/font/google";
-
-const teko = Teko({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col overflow-hidden ">
       <section className=" bg-background-image bg-center  bg-cover bg-no-repeat h-[600px]">
         <div className="flex items-end h-full">
-          <div className={`px-4 md:px-8 ${teko.className}`}>
+          <div className={`px-4 md:px-8 `}>
             <h1 className="text-4xl font-extrabold text-zinc-200 tracking-widest">
               Welcome to The <span className="text-red-600">Blogosphere</span>
             </h1>

@@ -5,7 +5,6 @@ import { Suspense, useEffect, useState } from "react";
 import { ScrollArea } from "@radix-ui/react-scroll-area";
 import { Loader2 } from "lucide-react";
 import { useSearchParams } from "next/navigation";
-import { AxiosError } from "axios";
 
 import { getData } from "@/lib/api";
 
@@ -17,7 +16,7 @@ const BlogFilter = async () => {
   useEffect(() => {
     getData(params as string)
       .then((e) => setData(e))
-      .catch((e: Error | AxiosError) => console.log(e));
+      .catch((e: Error) => console.log(e));
   }, [params]);
 
   return (

@@ -16,13 +16,11 @@ import {
   MoreVertical,
   Pizza,
   Plus,
-  Settings,
   SunMedium,
   Trash,
   Twitter,
   User,
   X,
-  Bell,
   type Icon as LucideIcon,
 } from "lucide-react";
 import {

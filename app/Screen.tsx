@@ -1,3 +1,4 @@
+"use client";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
@@ -8,7 +9,7 @@ import { useContext } from "react";
 import Drawer from "@/components/Drawer";
 
 const Screen = ({ children }: { children: React.ReactNode }) => {
-  const { loader, setLoader } = useContext(LoaderWrapper);
+  const { loader } = useContext(LoaderWrapper);
   return (
     <>
       {loader ? (

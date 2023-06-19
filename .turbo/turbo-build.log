@@ -1,0 +1,36 @@
+
+> demo-company@0.1.0 build D:\Web Projects\contest\demo-company
+> next build
+
+- info Creating an optimized production build...
+- info Compiled successfully
+- info Linting and checking validity of types...
+- info Collecting page data...
+- info Generating static pages (0/4)
+- info Generating static pages (1/4)
+- info Generating static pages (2/4)
+- info Generating static pages (3/4)
+- info Generating static pages (4/4)
+- info Finalizing page optimization...
+
+Route (app)                                Size     First Load JS
+┌ ○ /                                      0 B                0 B
+├ λ /blog/[...blog]                        9.46 kB         113 kB
+└ ○ /favicon.ico                           0 B                0 B
++ First Load JS shared by all              77.6 kB
+  ├ chunks/524-260aaceda69d7ffa.js         25.2 kB
+  ├ chunks/575debc0-91b1459a72d9bca9.js    50.5 kB
+  ├ chunks/main-app-09b9ce3172e924e7.js    217 B
+  └ chunks/webpack-a6c5395ea830edcd.js     1.72 kB
+
+Route (pages)                              Size     First Load JS
+─ ○ /404                                   182 B          74.8 kB
++ First Load JS shared by all              74.6 kB
+  ├ chunks/framework-510ec8ffd65e1d01.js   45 kB
+  ├ chunks/main-e8421696f96f1580.js        27.7 kB
+  ├ chunks/pages/_app-f1ab493a43d8b990.js  195 B
+  └ chunks/webpack-a6c5395ea830edcd.js     1.72 kB
+
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
