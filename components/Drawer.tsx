@@ -61,7 +61,11 @@ const Drawer: React.FC<SiteConfig> = ({ name, NavLinks }) => {
           </SheetTrigger>
         </div>
       </div>
-      <SheetContent className="bg-web-500" position="left" size="full">
+      <SheetContent
+        className="bg-web-500 border-none"
+        position="left"
+        size="full"
+      >
         <SheetHeader className="text-neutral-500">
           <SheetTitle
             className={`text-yellow-500 font-bold ${teko.className} tracking-widest uppercase`}

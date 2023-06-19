@@ -15,6 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const path = usePathname();
+  console.log(path);
+
   return (
     <>
       <SearchFilter />
@@ -25,7 +27,7 @@ export default function RootLayout({
               key={index}
               variant={"secondary"}
               className={` p-2 ${
-                path === item.value
+                path === item.value.split("?")[0]
                   ? "bg-yellow-500 text-web-900 hover:bg-yellow-500/80"
                   : "bg-web-500/60 hover:bg-web-500 text-gray-300"
               }`}
